@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieKa - Movie Review Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="carousel.css" />
+
+</head>
+<body>
+
+  <header class="text-center py-3 bg-dark text-white">
+    <h1>MovieKa</h1>
+    <p>Your destination for honest reviews, ratings, and recommendations</p>
+  </header>
+  <nav>
+    <a href="index.html" style="color: #ffcc00;">Home</a>
+    <a href="top-rated.html">Top Rated</a>
+    <a href="trending.html">Trending</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="login.html">Login/Register</a>
+  </nav>
+<section class="about">
+    <h2>MovieKa </h2>
+    <p>
+      Welcome to MovieKa — your go-to platform for honest movie reviews, ratings, and recommendations!
+    </p>
+  </section>
+
+
+  <main class="container">
+    <!-- научные -->
+    <div class="carousel-container">
+  <h2 class="carousel-title">Science Fiction</h2>
+  <div class="carousel-track">
+
+
+
+    <article class="movie-card">
+      <!-- Карточка фильма -->
+
+      <img 
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS9maE7-yWPpULS8xay8yVKGnVZctnXkOXMg&s" 
+  alt="Interstellar " 
+  data-title="Interstellar "
+  data-video="https://www.youtube.com/watch?v=Rvns5DaW-ug">
+      <div>
+        <h5>Interstellar (2014)</h5>
+      </div>
+    </article>
+
+
+        <article class="movie-card">
+      <img 
+  src="https://kz.kinobar.im/uploads/posts/2024-01/1705566716_3.jpg" 
+  alt="na grany" 
+  data-title="na grany"
+  data-video="https://www.youtube.com/watch?v=AHqz53_B560">
+      <div>
+        <h5>Na grany(2015)</h5>
+      </div>
+    </article>
+      <article class="movie-card">
+      <img 
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9lv2UGgS-aGFEgsolMmVwGdtffj-Zi06oYA&s" 
+  alt="Quantum Voyage " 
+  data-title="Quantum Voyage "
+  data-video="https://www.youtube.com/watch?v=HSaQoVOFS1U">
+      <div>
+        <h5>Quantum Voyage (The Black Hole) </h5>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <!-- мультики  -->
+    <div class="carousel-container">
+      <h2 class="carousel-title">Animation</h2>
+      <div class="carousel-track">
+    <article class="movie-card">
+        <img 
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmn0KOb21JJ3QdcRs6yhB320zj3mm4wr4sLw&s" 
+  alt="Gravity Falls" 
+  data-title="Gravity Falls"
+  data-video="https://www.youtube.com/watch?v=-SNEwiG98SM">
+      <div>
+        <h5>Interstellar (2014)</h5>
+      </div>
+    </article>
+
+        <div class="movie-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZYIbgPkL1tJNRQHsl1DF7PxxsEIpTx4giJg&s" alt="SpongeBob">
+          <h5>SpongeBob (2025)</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comedy -->
+    <div class="carousel-container">
+      <h2 class="carousel-title">Comedy / Drama</h2>
+      <div class="carousel-track">
+        <div class="movie-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAhHPDmbrQKc_qOaOHHCTYRutghqw4DZMShA&s" alt="Barbie">
+          <h5>Barbie (2023)</h5>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-3 bg-dark text-white">
+    &copy; 2025 MovieKa. Kadessova
+  </footer>
+  </div>
+  <!-- Modal for YouTube Trailer -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title text-white">Watch Trailer</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe id="videoFrame" src="" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="new.js"></script>
+</body>
+</html>

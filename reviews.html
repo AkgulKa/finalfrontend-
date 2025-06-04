@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MovieKa - Movie Review Platform</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="review.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+<body>
+  <header>
+    <h1>MovieKa</h1>
+    <p>Your destination for honest reviews, ratings, and recommendations</p>
+  </header>
+
+
+<nav class="navbar navbar-inverse d-flex justify-content-between align-items-center px-3">
+  <ul class="nav navbar-nav d-flex flex-row">
+    <li class="nav-item px-2"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item px-2"><a class="nav-link" href="top-rated.html">Top Rated</a></li>
+    <li class="nav-item px-2"><a class="nav-link" href="trending.html">Trending</a></li>
+    <li class="nav-item px-2"><a class="nav-link" href="reviews.html">Reviews</a></li>
+    <li class="nav-item px-2"><a class="nav-link" href="login.html">Login/Register</a></li>
+  </ul>
+</nav>
+
+  <section class="about">
+    <h2>User Reviews</h2>
+    <p>See what our community is saying!</p>
+  </section>
+
+  <main class="container my-4">
+  <div class="row" id="dynamicReviews"></div>
+    <div class="reviews-body">
+    <h2>Leave Your Review</h2>
+    <form id="reviewForm">
+      <label for="movie">Select Movie:</label>
+      <select id="movie" required>
+        <option value="">--Choose a movie--</option>
+        <option value="Interstellar">Interstellar</option>
+        <option value="Barbie">Barbie</option>
+        <option value="Gravity Falls">Gravity Falls</option>
+        <option value="SpongeBob">SpongeBob</option>
+      </select><br><br>
+    
+      <label for="username">Name:</label>
+      <input type="text" id="username" required><br>
+    
+      <label for="rating">Rating (1–5):</label>
+      <input type="number" id="rating" min="1" max="5" required><br>
+    
+      <label for="opinion">Opinion:</label><br>
+      <textarea id="opinion" rows="4" required></textarea><br>
+    
+      <button type="submit">Submit Review</button>
+    </form>
+    
+    <h3>All Reviews</h3>
+    <div id="allReviews"></div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 MovieKa. Kadessova
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="review.js"></script>
+</body>
+</html>
