@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   Object.entries(reviews).forEach(([movie, entries]) => {
     const section = document.createElement("div");
     section.innerHTML = `<h3>${movie}</h3>`;
-    
+
     entries.forEach((review, index) => {
       const div = document.createElement("div");
       div.innerHTML = `

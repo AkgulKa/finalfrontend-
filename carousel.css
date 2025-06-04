@@ -1,37 +1,37 @@
-    .carousel-container {
-      margin: 30px 0;
-    }
-    .carousel-title {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      color: #ffcc00;
-    }
-    .carousel-track {
-      display: flex;
-      overflow-x: auto;
-      gap: 20px;
-      scroll-snap-type: x mandatory;
-    }
-    .carousel-track::-webkit-scrollbar {
-      display: none;
-    }
-    .movie-card {
-      min-width: 200px;
-      flex-shrink: 0;
-      scroll-snap-align: start;
-      background-color: #222;
-      padding: 10px;
-      border-radius: 10px;
-      text-align: center;
-    }
-   .movie-card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 8px;
-      background-color: #000;
-    }
-    .movie-card h5 {
-      margin-top: 10px;
-      color: white;
-    }
+.carousel-container {
+  margin: 30px 0;
+}
+.carousel-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+}
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+.movie-card {
+  min-width: 200px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.movie-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #000;
+}
+.movie-card h5 {
+  margin-top: 10px;
+  color: white;
+}

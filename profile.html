@@ -1,110 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MovieKa - Profile</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Welcome to Your Profile</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieKa - Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Your Profile</h1>
+    </header>
 
-  <nav class="navbar navbar-inverse d-flex justify-content-between align-items-center px-3">
-  <ul class="nav navbar-nav d-flex flex-row">
-    <li class="nav-item px-2"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item px-2"><a class="nav-link" href="top-rated.html">Top Rated</a></li>
-    <li class="nav-item px-2"><a class="nav-link" href="trending.html">Trending</a></li>
-    <li class="nav-item px-2"><a class="nav-link" href="reviews.html">Reviews</a></li>
-    <li class="nav-item px-2"><a class="nav-link" href="login.html">Login/Register</a></li>
-  </ul>
-</nav>
-<main class="container my-5">
-  <div class="bg-dark text-white p-4 rounded">
-    <h3 id="welcomeUser">Hello, User</h3>
-    <p>Email: <span id="userEmail"></span></p>
+    <nav
+      class="navbar navbar-inverse d-flex justify-content-between align-items-center px-3"
+    >
+      <ul class="nav navbar-nav d-flex flex-row">
+        <li class="nav-item px-2">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="top-rated.html">Top Rated</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="trending.html">Trending</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="reviews.html">Reviews</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="login.html">Login/Register</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="container my-5">
+      <div class="bg-dark text-white p-4 rounded">
+        <h3 id="welcomeUser">Hello, User</h3>
+        <p>Email: <span id="userEmail"></span></p>
 
-    <div id="profileInfo" style="display: none;">
-      <hr>
-      <h4>Your Info</h4>
-      <p><strong>Birthday:</strong> <span id="showBirthday"></span></p>
-      <p><strong>Age:</strong> <span id="showAge"></span></p>
-      <p><strong>Phone:</strong> <span id="showPhone"></span></p>
-      <p><strong>Address:</strong> <span id="showAddress"></span></p>
-      <button class="btn btn-outline-warning" id="editBtn">Edit Info</button>
-    </div>
+        <div id="profileInfo" style="display: none">
+          <hr />
+          <h4>Your Info</h4>
+          <p><strong>Birthday:</strong> <span id="showBirthday"></span></p>
+          <p><strong>Age:</strong> <span id="showAge"></span></p>
+          <p><strong>Phone:</strong> <span id="showPhone"></span></p>
+          <p><strong>Address:</strong> <span id="showAddress"></span></p>
+          <button class="btn btn-outline-warning" id="editBtn">
+            Edit Info
+          </button>
+        </div>
 
-    <form id="profileForm" style="display: none;">
-      <div class="mb-3">
-        <label for="birthday" class="form-label">Birthday</label>
-        <input type="date" class="form-control" id="birthday">
+        <form id="profileForm" style="display: none">
+          <div class="mb-3">
+            <label for="birthday" class="form-label">Birthday</label>
+            <input type="date" class="form-control" id="birthday" />
+          </div>
+          <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" class="form-control" id="age" />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="phone" />
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" />
+          </div>
+          <button type="submit" class="btn btn-warning">Save Info</button>
+        </form>
       </div>
-      <div class="mb-3">
-        <label for="age" class="form-label">Age</label>
-        <input type="number" class="form-control" id="age">
-      </div>
-      <div class="mb-3">
-        <label for="phone" class="form-label">Phone</label>
-        <input type="text" class="form-control" id="phone">
-      </div>
-      <div class="mb-3">
-        <label for="address" class="form-label">Address</label>
-        <input type="text" class="form-control" id="address">
-      </div>
-      <button type="submit" class="btn btn-warning">Save Info</button>
-    </form>
-  </div>
-</main>
+    </main>
 
-  <footer class="text-center text-light mt-5">
-    &copy; 2025 MovieKa. Kadessova
-  </footer>
+    <footer class="text-center text-light mt-5">
+      &copy; 2025 MovieKa. Kadessova
+    </footer>
 
- <script>
-  const user = JSON.parse(localStorage.getItem("user"));
-  const form = document.getElementById("profileForm");
-  const profileInfo = document.getElementById("profileInfo");
+    <script>
+      const user = JSON.parse(localStorage.getItem("user"));
+      const form = document.getElementById("profileForm");
+      const profileInfo = document.getElementById("profileInfo");
 
-  if (!user) {
-    alert("Please log in first.");
-    window.location.href = "login.html";
-  } else {
-    document.getElementById("welcomeUser").innerText = `Hello, ${user.name}`;
-    document.getElementById("userEmail").innerText = user.email;
+      if (!user) {
+        alert("Please log in first.");
+        window.location.href = "login.html";
+      } else {
+        document.getElementById(
+          "welcomeUser"
+        ).innerText = `Hello, ${user.name}`;
+        document.getElementById("userEmail").innerText = user.email;
 
-    const hasAllData = user.birthday && user.age && user.phone && user.address;
+        const hasAllData =
+          user.birthday && user.age && user.phone && user.address;
 
-    if (hasAllData) {
-      document.getElementById("showBirthday").innerText = user.birthday;
-      document.getElementById("showAge").innerText = user.age;
-      document.getElementById("showPhone").innerText = user.phone;
-      document.getElementById("showAddress").innerText = user.address;
-      profileInfo.style.display = "block";
-    } else {
-      form.style.display = "block";
-      if (user.birthday) document.getElementById("birthday").value = user.birthday;
-      if (user.age) document.getElementById("age").value = user.age;
-      if (user.phone) document.getElementById("phone").value = user.phone;
-      if (user.address) document.getElementById("address").value = user.address;
-    }
-  }
+        if (hasAllData) {
+          document.getElementById("showBirthday").innerText = user.birthday;
+          document.getElementById("showAge").innerText = user.age;
+          document.getElementById("showPhone").innerText = user.phone;
+          document.getElementById("showAddress").innerText = user.address;
+          profileInfo.style.display = "block";
+        } else {
+          form.style.display = "block";
+          if (user.birthday)
+            document.getElementById("birthday").value = user.birthday;
+          if (user.age) document.getElementById("age").value = user.age;
+          if (user.phone) document.getElementById("phone").value = user.phone;
+          if (user.address)
+            document.getElementById("address").value = user.address;
+        }
+      }
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    user.birthday = document.getElementById("birthday").value;
-    user.age = document.getElementById("age").value;
-    user.phone = document.getElementById("phone").value;
-    user.address = document.getElementById("address").value;
-    localStorage.setItem("user", JSON.stringify(user));
-    location.reload(); // Reload to show info
-  });
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        user.birthday = document.getElementById("birthday").value;
+        user.age = document.getElementById("age").value;
+        user.phone = document.getElementById("phone").value;
+        user.address = document.getElementById("address").value;
+        localStorage.setItem("user", JSON.stringify(user));
+        location.reload(); // Reload to show info
+      });
 
-  document.getElementById("editBtn")?.addEventListener("click", () => {
-    profileInfo.style.display = "none";
-    form.style.display = "block";
-  });
-</script>
-</body>
+      document.getElementById("editBtn")?.addEventListener("click", () => {
+        profileInfo.style.display = "none";
+        form.style.display = "block";
+      });
+    </script>
+  </body>
 </html>

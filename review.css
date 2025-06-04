@@ -1,57 +1,57 @@
-  .reviews-body {
-    text-align: center;
-  }
+.reviews-body {
+  text-align: center;
+}
 
 .reviews-body h2 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .reviews-body input {
-    background: #2c2c2c;
-    color: grey;
-    border: none;
-    outline: none;
-    padding: 5px 8px;
+  background: #2c2c2c;
+  color: grey;
+  border: none;
+  outline: none;
+  padding: 5px 8px;
 }
 
 .reviews-body label {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .reviews-body textarea {
-    background: #2c2c2c;
-    color: grey;
-    border: none;
-    outline: none;
+  background: #2c2c2c;
+  color: grey;
+  border: none;
+  outline: none;
 }
 
 .reviews-body button {
-    padding: 10px 20px;
-    font-size: 14px;
-    border: 1px solid ghostwhite;
-    color: ghostwhite;
-    background: transparent;
-    transition: all ease 0.7s;
-    margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid ghostwhite;
+  color: ghostwhite;
+  background: transparent;
+  transition: all ease 0.7s;
+  margin-top: 10px;
 }
 
 .reviews-body button:hover {
-    color: yellow;
-    border-color: yellow;
+  color: yellow;
+  border-color: yellow;
 }
 
 .reviews-body select {
-    background: #2c2c2c;
-    color: white;
+  background: #2c2c2c;
+  color: white;
 }
 
 .reviews-body h3 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #allReviews {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    display: flex;
-    gap: 1.5rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  gap: 1.5rem;
 }

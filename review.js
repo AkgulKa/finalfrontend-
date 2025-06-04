@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("reviewForm");
   const allReviewsDiv = document.getElementById("allReviews");
-  const dynamicRow = document.getElementById("dynamicReviews"); 
+  const dynamicRow = document.getElementById("dynamicReviews");
 
   let allReviews = JSON.parse(localStorage.getItem("reviews")) || {};
 
   const renderAll = () => {
-    dynamicRow.innerHTML = "";    
-    allReviewsDiv.innerHTML = ""; 
+    dynamicRow.innerHTML = "";
+    allReviewsDiv.innerHTML = "";
     for (let movieTitle in allReviews) {
       renderReviews(movieTitle, allReviews[movieTitle]);
     }
   };
 
-  renderAll(); 
+  renderAll();
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     allReviews[movieTitle].push(newReview);
     localStorage.setItem("reviews", JSON.stringify(allReviews));
 
-    renderAll(); 
+    renderAll();
     form.reset();
   });
 

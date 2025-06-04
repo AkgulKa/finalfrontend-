@@ -2,7 +2,7 @@
   background-color: #2c2c2c;
   padding: 1rem;
   border-radius: 8px;
-  display: flex; 
+  display: flex;
   gap: 20px;
   align-items: flex-start;
   width: 1200px;
@@ -17,6 +17,6 @@
 }
 
 .movie-card div {
-  flex: 1; 
+  flex: 1;
   text-align: left;
 }
